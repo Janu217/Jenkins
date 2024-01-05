@@ -1,3 +1,4 @@
+@library('roboshot-sharedlibrary') _
 pipeline {
        agent {
         label 'WS'
@@ -9,6 +10,9 @@ pipeline {
     stages {
         stage('Example') {
             steps {
+                script{
+                    sample.info("sample message")
+                }
                 echo 'Hello World'
             }
         }
