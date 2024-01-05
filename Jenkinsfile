@@ -1,4 +1,5 @@
-@library('roboshot-sharedlibrary') _
+@Library('roboshot-sharedlibrary') _
+
 pipeline {
        agent {
         label 'WS'
